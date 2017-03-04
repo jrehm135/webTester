@@ -1,0 +1,108 @@
+<html>
+
+	<head>
+		<title>Zeta Psi at VT</title>
+		<link type="text/css" rel="stylesheet" href="./css/recruitmentStyle.css">
+		
+		</link>
+	</head>
+
+	<body>
+		<div id = "topImage">
+			<p id = "title">
+				Zeta Psi - Alpha Pi Chapter
+			<p>
+		</div>
+		<nav>
+			<ul id = "fullMenu">
+				<a href = "about.html">
+					<li class = "menu">
+					About
+					</li>
+				</a>
+				<a href = "recruitment.html">
+					<li class = "menu">
+					Recruitment
+					</li>
+				</a>
+				<a href = "scholarship.html">
+					<li class = "menu">
+					Scholarship
+					</li>
+				</a>
+				<a href = "philanthropy.html">
+					<li class = "menu">
+					Philanthropy and Awards
+					</li>
+				</a>
+				<a href = "alumni.html">
+					<li class = "menu">
+					Alumni
+					</li>
+				</a>
+				<a href = "donations.html">
+					<li id = "donations">
+					Donate
+					</li>
+				</a>
+			</ul>
+		</nav>
+		
+		<table>
+			<tr>
+				<td rowspan = "2" id = "schedule">
+					<img id = "scheduleIMG" src = "./images/rushSchedule.png"></img>
+				</td>
+				<td>
+					<h2>
+						Sign Up For Rush
+					</h2>
+					<!-- Start code for the form-->
+					<form method="post" name="myemailform" action="form-to-email.php" id = "form">
+						<p>
+							<label for='name'>Enter Full Name: </label><br>
+							<input type="text" name="name">
+						</p>
+						<p>
+							<label for='email'>Enter Email Address:</label><br>
+							<input type="text" name="email">
+						</p>
+						<p>
+							<label for='year'>Select Year:</label><br>
+							<select name="year">
+								<option value="freshman">Freshman</option>
+								<option value="sophomore">Sophomore</option>
+								<option value="junior">Junior</option>
+								<option value="senior">Senior</option>
+							</select>
+						</p>
+						<input type="submit" name='submit' value="submit">
+					</form>
+					<a href = "recruitmentAdded.html">
+						test link - remove after
+					</a>
+				</td>
+			</tr>
+			<tr>
+				<td id = "words">
+					<p>
+					IFC recognized fraternities at Virginia Tech have a formal recruitment period once every semester which lasts about two weeks. 
+					We, at Zeta Psi, use this time to host several events such as poker night, bowling, pickup basketball, Sharkey’s Wing Night,
+					bonfires, hiking the Cascades, and trips to the shooting range in order to get to know our potential candidates as well as
+					giving them a chance to learn about our chapter.
+					</p>
+				</td>
+			</tr>
+		</table>
+		
+		<script language="JavaScript">
+		// Code for validating the form
+		// Visit http://www.javascript-coder.com/html-form/javascript-form-validation.phtml
+		// for details
+		var frmvalidator  = new Validator("myemailform");
+		frmvalidator.addValidation("name","req","Please provide your name"); 
+		frmvalidator.addValidation("email","req","Please provide your email"); 
+		frmvalidator.addValidation("email","email","Please enter a valid email address"); 
+		</script>
+	</body>
+</html>
